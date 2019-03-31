@@ -22,7 +22,7 @@
     <form action="/views/form-user-dto.jsp" method="post">
         <c:out value="${badRegister}" />
         <p><fmt:message key="registration.inputLogin" /> <input type="text" name="login" required="required" /></p>
-        <p><fmt:message key="registration.emailOrPhone" /> <input type="text" name="emailOrPhone" required="required"></p>
+        <p><fmt:message key="registration.email" /> <input type="text" name="email" required="required"></p>
         <p><fmt:message key="registration.inputPassword" /> <input type="password" name="password" required="required" /></p>
         <button type="submit"><fmt:message key="submitButtonValue" /></button>
     </form>

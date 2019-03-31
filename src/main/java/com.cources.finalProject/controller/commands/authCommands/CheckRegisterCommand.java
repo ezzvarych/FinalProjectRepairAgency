@@ -1,10 +1,9 @@
 package com.cources.finalProject.controller.commands.authCommands;
 
 import com.cources.finalProject.controller.commands.Command;
-import com.cources.finalProject.models.dto.UserDTO;
+import com.cources.finalProject.model.dto.UserDTO;
 import com.cources.finalProject.validation.RegExpConstants;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 public class CheckRegisterCommand implements Command {
@@ -30,7 +29,6 @@ public class CheckRegisterCommand implements Command {
 
     private boolean isValidUser(UserDTO user) {
         return user.getLogin().matches(RegExpConstants.LOGIN_VALID_REGEXP) &&
-                (user.getEmailOrPhone().matches(RegExpConstants.EMAIL_VALID_REGEXP) ||
-                        user.getEmailOrPhone().matches(RegExpConstants.PHONE_VALID_REGEXP));
+                user.getEmail().matches(RegExpConstants.EMAIL_VALID_REGEXP);
     }
 }

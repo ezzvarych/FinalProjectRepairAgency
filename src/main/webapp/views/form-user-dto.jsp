@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
 
-<jsp:useBean id="userDTO" class="com.cources.finalProject.models.dto.UserDTO" scope="request" />
+<jsp:useBean id="userDTO" class="com.cources.finalProject.model.dto.UserDTO" scope="request" />
 <jsp:setProperty name="userDTO" property="*" />
 
 <jsp:forward page="/app/register" />

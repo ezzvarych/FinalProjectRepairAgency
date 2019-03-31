@@ -6,7 +6,33 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb98cdd6-654c-46b5-a5f1-7610aa0592c4" name="Default Changelist" comment="" />
+    <list default="true" id="fb98cdd6-654c-46b5-a5f1-7610aa0592c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/GenericDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/ConnectionPoolHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/ConnectionPoolHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCPersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCPersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/ObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/ObjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/PersonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/FeedbackDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/FeedbackDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/OrderDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/OrderDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/OrderRequestDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/OrderRequestDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/properties/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/properties/messages_uk.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/properties/messages_uk.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/form-user-dto.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/form-user-dto.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/registration.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,37 +74,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6414" />
+          <entry key="java" value="9437" />
           <entry key="jsp" value="902" />
           <entry key="properties" value="221" />
+          <entry key="sql" value="472" />
           <entry key="txt" value="14" />
           <entry key="xml" value="210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6414" />
+          <entry key="JAVA" value="9437" />
           <entry key="JSP" value="902" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="Properties" value="221" />
+          <entry key="SQL" value="8" />
+          <entry key="Scratch" value="464" />
           <entry key="XML" value="210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="66" />
-          <entry key="jsp" value="6" />
+          <entry key="java" value="96" />
+          <entry key="jsp" value="7" />
           <entry key="properties" value="12" />
-          <entry key="sql" value="1" />
+          <entry key="sql" value="5" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="66" />
-          <entry key="JSP" value="6" />
+          <entry key="JAVA" value="96" />
+          <entry key="JSP" value="7" />
           <entry key="Properties" value="12" />
-          <entry key="Scratch" value="1" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="2" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -87,73 +117,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCDaoFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCPersonDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="2414">
+              <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
               <folding>
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
-                <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCPersonDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/test/entitySamples/SampleEntitiesCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/PersonMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/PersonMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/com/cources/finalProject/model/dao/impl/JDBCPersonDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding>
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -166,29 +171,17 @@
         <option value="Enum" />
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/properties/message.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/Hello.java" />
-        <option value="$PROJECT_DIR$/src/main/properties/message_uk.properties" />
-        <option value="$PROJECT_DIR$/src/main/properties/messages_uk.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registration.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/RegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/properties/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/Entities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dto/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/properties/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/form-user-dto.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/filters/ValidationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/CheckRegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/test/HelloTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/filters/LocaleFilter.java" />
@@ -197,7 +190,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/Servlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/CommandUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/LoginCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/filters/EncodingFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -222,6 +214,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCDaoFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/PersonMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCPersonDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/service/impl/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/JDBCTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/ConnectionPoolHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/service/impl/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCDaoFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dto/UserDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sqlscripts/initdata.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/249764dc-35c3-437a-a4d9-0d1fa900bc6e/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/PersonMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Role.java" />
+        <option value="$PROJECT_DIR$/src/test/entitySamples/SampleEntitiesCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Person.java" />
+        <option value="$PROJECT_DIR$/src/test/com/cources/finalProject/model/dao/impl/JDBCPersonDAOTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCPersonDAO.java" />
       </list>
     </option>
   </component>
@@ -250,6 +261,9 @@
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -297,7 +311,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -306,7 +320,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,7 +339,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -327,7 +350,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -338,8 +361,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.cources.finalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="validation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
@@ -363,6 +405,26 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="entitySamples" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -374,6 +436,9 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -383,10 +448,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.cources.finalProject.model.dao.impl" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cources.finalProject.controller" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ПК\idea-workspace\FinalProject\src\main\webapp\sqlscripts" />
       <recent name="C:\Users\ПК\idea-workspace\FinalProject\src\main\webapp" />
       <recent name="C:\Users\ПК\idea-workspace\FinalProject\src\main\java\properties" />
     </key>
@@ -403,7 +475,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JDBCPersonDAOTest">
+    <configuration name="JDBCPersonDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cources.finalProject.model.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cources.finalProject.model.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.cources.finalProject.model.dao.impl.JDBCPersonDAOTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCPersonDAOTest.createDeleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cources.finalProject.model.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cources.finalProject.model.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.cources.finalProject.model.dao.impl.JDBCPersonDAOTest" />
+      <option name="METHOD_NAME" value="createDeleteTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.0" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <deployment>
@@ -476,6 +578,17 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="JUnit.JDBCPersonDAOTest" />
+      <item itemvalue="JUnit.JDBCPersonDAOTest.createDeleteTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JDBCPersonDAOTest" />
+        <item itemvalue="JUnit.JDBCPersonDAOTest.createDeleteTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -497,35 +610,58 @@
       <workItem from="1553850515285" duration="469000" />
       <workItem from="1553851138686" duration="621000" />
       <workItem from="1553852278872" duration="88000" />
-      <workItem from="1553852501134" duration="14462000" />
+      <workItem from="1553852501134" duration="30432000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2019.03.26 at 13h 24m 04s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 42m 45s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.03.26 at 13h 26m 10s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 48m 26s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.03.27 at 09h 46m 30s.xml">
-      <configuration name="Unnamed" configurationId="JUnit" />
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 50m 23s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 51m 06s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest_createDeleteTest - 2019.03.31 at 17h 52m 47s.xml">
+      <configuration name="JDBCPersonDAOTest.createDeleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 53m 01s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest_createDeleteTest - 2019.03.31 at 17h 54m 51s.xml">
+      <configuration name="JDBCPersonDAOTest.createDeleteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 17h 58m 49s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 18h 05m 04s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JDBCPersonDAOTest - 2019.03.31 at 18h 07m 14s.xml">
+      <configuration name="JDBCPersonDAOTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50903000" />
+    <option name="totallyTimeSpent" value="66873000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.35409835" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.36557376" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.36557376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,8 +688,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/properties/message.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/properties/message_uk.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/properties/messages_uk.properties">
       <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
@@ -585,13 +719,6 @@
       <provider selected="true" editor-type-id="ResourceBundle" />
       <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/HelloTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar!/javax/servlet/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -611,34 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -670,9 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/249764dc-35c3-437a-a4d9-0d1fa900bc6e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/properties/app.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -688,48 +784,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/ConnectionPoolHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/OrderRequestDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Feedback.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Feedback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/OrderDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/OrderDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
@@ -743,14 +805,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
@@ -775,25 +830,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/OrderRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/OrderRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/entities/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/ObjectMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/ObjectMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
@@ -803,7 +847,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/specificdao/FeedbackDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/FeedbackDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
@@ -813,7 +857,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/DAOFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/validation/RegExpConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="87" selection-start-line="3" selection-start-column="87" selection-end-line="3" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/OrderRequestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/specificdao/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
@@ -823,11 +898,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCDaoFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/ConnectionPoolHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="357">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/service/impl/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/JDBCTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/GenericDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCDaoFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#840#841#0" expanded="true" />
             <element signature="e#867#868#0" expanded="true" />
             <element signature="e#935#936#0" expanded="true" />
@@ -840,25 +981,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/impl/JDBCPersonDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        <state relative-caret-position="82">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dto/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/controller/commands/authCommands/CheckRegisterCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sqlscripts/createdb.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/249764dc-35c3-437a-a4d9-0d1fa900bc6e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="85" selection-end-line="10" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sqlscripts/initdata.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/models/dao/mapper/PersonMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/entitySamples/SampleEntitiesCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        <state relative-caret-position="255">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/mapper/PersonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/entities/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+          <folding>
+            <element signature="e#2410#2411#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.cources.finalProject/model/dao/impl/JDBCPersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="142" column="42" lean-forward="true" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/cources/finalProject/model/dao/impl/JDBCPersonDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
