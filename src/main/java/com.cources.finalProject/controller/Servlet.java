@@ -1,11 +1,13 @@
 package com.cources.finalProject.controller;
 
-import com.cources.finalProject.controller.commands.authCommands.CheckRegisterCommand;
+import com.cources.finalProject.controller.commands.authCommands.*;
 import com.cources.finalProject.controller.commands.Command;
-import com.cources.finalProject.controller.commands.authCommands.RegistrationCommand;
+import com.cources.finalProject.model.service.PersonService;
+import com.cources.finalProject.model.service.impl.PersonServiceImpl;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +19,7 @@ import java.util.Map;
 public class Servlet extends HttpServlet {
 
     private Map<String, Command> commandMap = new HashMap<>();
+    private PersonService personService = new PersonServiceImpl();
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
@@ -24,7 +27,10 @@ public class Servlet extends HttpServlet {
                 new HashSet<String>());
 
         commandMap.put("registration", new RegistrationCommand());
-        commandMap.put("register", new CheckRegisterCommand());
+        commandMap.put("check-register", new CheckRegisterCommand(personService));
+        commandMap.put("login", new LoginCommand());
+        commandMap.put("check-login", new CheckLoginCommand(personService));
+        commandMap.put("logout", new LogoutCommand());
     }
 
     @Override

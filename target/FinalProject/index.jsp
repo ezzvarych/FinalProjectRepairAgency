@@ -1,3 +1,5 @@
+<%@ page import="java.util.AbstractMap" %>
+<%@ page import="com.cources.finalProject.model.entities.Role" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -13,9 +15,9 @@
 <div class="jumbotron text-center">
     <h1>My First Bootstrap Page</h1>
     <p><fmt:message key="welcome" /></p>
-    <%--<jsp:useBean id="date" class="java.util.Date"/>--%>
-    <p><fmt:formatDate value="${date}" dateStyle="full"/></p>
-    <p>Now is <fmt:formatDate value="${bean.date}" pattern="yyyy-MM-dd HH:mm:ss" /></p>
+    <p><a href="/app/registration">Sign up</a></p>
+    <p><a href="/app/login">Sign in</a></p>
+    <p>${sessionScope.login}</p>
 </div>
 
 <div class="container">

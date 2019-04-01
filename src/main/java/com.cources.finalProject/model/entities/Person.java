@@ -1,7 +1,10 @@
 package com.cources.finalProject.model.entities;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 import java.util.Objects;
 
+//TODO Find out where to store password hasher
 public class Person {
     private Long personId;
     private String login;
@@ -29,6 +32,7 @@ public class Person {
             return this;
         }
         public PersonBuilder setPassword(String password) {
+            //this.password = hashPassword(password);
             this.password = password;
             return this;
         }
@@ -48,6 +52,10 @@ public class Person {
         this.password = builder.password;
         this.role = builder.role;
     }
+
+    /*private static String hashPassword(String textPassword) {
+        return BCrypt.hashpw(textPassword, BCrypt.gensalt(12));
+    }*/
 
     public void setPersonId(Long personId) { this.personId = personId; }
 
@@ -76,6 +84,7 @@ public class Person {
     }
 
     public void setPassword(String password) {
+        //this.password = hashPassword(password);
         this.password = password;
     }
 

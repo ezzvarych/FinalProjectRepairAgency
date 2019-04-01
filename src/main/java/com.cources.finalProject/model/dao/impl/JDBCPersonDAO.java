@@ -23,6 +23,7 @@ public class JDBCPersonDAO implements PersonDAO {
     private static final String GET_ALL_BY_ROLE_QUERY = "select * from person where role_id=?";
     private static final String GET_BY_LOGIN_QUERY = "select * from person where login=?";
     private static final String GET_BY_EMAIL_QUERY = "select * from person where email=?";
+    private static final String GET_BY_LOGIN_OR_EMAIL_QUERY = "select * from person where email=? or login=?";
 
     private DataSource dataSource;
 
@@ -83,6 +84,17 @@ public class JDBCPersonDAO implements PersonDAO {
     }
 
     @Override
+    public Optional<Person> getByLoginOrEmail(String loginOrEmail) {
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = JDBCTemplate.prepareQuery(connection, GET_BY_LOGIN_OR_EMAIL_QUERY,
+                     loginOrEmail, loginOrEmail)) {
+            return Optional.ofNullable(getPersonFromStatement(statement));
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
     public void create(Person entity) {
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection, CREATE_QUERY, entity.getLogin(),
@@ -100,6 +112,7 @@ public class JDBCPersonDAO implements PersonDAO {
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery(GET_ALL_QUERY)) {
+            System.out.println(connection);
             PersonMapper personMapper = new PersonMapper();
             while (rs.next()) {
                 Person person = personMapper.extractFromResultSet(rs);

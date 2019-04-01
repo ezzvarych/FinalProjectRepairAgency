@@ -11,4 +11,5 @@ public interface PersonDAO extends GenericDAO<Person> {
     List<Person> getAllByRole(Role role);
     Optional<Person> getByLogin(String login);
     Optional<Person> getByEmail(String email);
+    Optional<Person> getByLoginOrEmail(String loginOrEmail);
 }

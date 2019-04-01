@@ -1,3 +1,5 @@
+<%@ page import="java.util.AbstractMap" %>
+<%@ page import="com.cources.finalProject.model.entities.Role" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -15,6 +17,7 @@
     <p><fmt:message key="welcome" /></p>
     <p><a href="/app/registration">Sign up</a></p>
     <p><a href="/app/login">Sign in</a></p>
+    <p>${sessionScope.login}</p>
 </div>
 
 <div class="container">

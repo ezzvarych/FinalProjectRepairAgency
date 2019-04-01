@@ -4,4 +4,35 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+    <filter>
+        <filter-name>LocaleFilter</filter-name>
+        <filter-class>com.cources.finalProject.controller.filters.LocaleFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.cources.finalProject.controller.filters.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LocaleFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.cources.finalProject.listeners.SessionListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>com.cources.finalProject.controller.Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet</servlet-name>
+        <url-pattern>/app/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>

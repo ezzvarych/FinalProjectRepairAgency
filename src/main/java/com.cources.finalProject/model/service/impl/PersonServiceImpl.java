@@ -38,6 +38,11 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
+    public Optional<Person> getByLoginOrEmail(String loginOrEmail) {
+        return personDAO.getByLoginOrEmail(loginOrEmail);
+    }
+
+    @Override
     public void create(Person entity) {
         personDAO.create(entity);
     }

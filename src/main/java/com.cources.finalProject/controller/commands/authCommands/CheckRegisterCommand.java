@@ -1,33 +1,41 @@
 package com.cources.finalProject.controller.commands.authCommands;
 
 import com.cources.finalProject.controller.commands.Command;
-import com.cources.finalProject.model.dto.UserDTO;
+import com.cources.finalProject.controller.mapper.PersonMapper;
+import com.cources.finalProject.model.dto.PersonDTO;
+import com.cources.finalProject.model.entities.Person;
+import com.cources.finalProject.model.service.PersonService;
 import com.cources.finalProject.validation.RegExpConstants;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Optional;
 
 public class CheckRegisterCommand implements Command {
 
-    String existedLogin = "admin";
+    private PersonService personService;
+
+    public CheckRegisterCommand(PersonService personService) {
+        this.personService = personService;
+    }
 
     @Override
     public String execute(HttpServletRequest request) {
-        System.out.println(request.getRequestURI());
-        UserDTO userDTO = (UserDTO) request.getAttribute("userDTO");
-        if (!isValidUser(userDTO)) {
+        PersonDTO requestPerson = PersonMapper.registrationExtractFromRequest(request);
+        System.out.println(requestPerson);
+        if (!isValidUser(requestPerson)) {
             request.setAttribute("badRegister", "Input valid params in form");
-            return "/app/registration";
+            return "/registration.jsp";
         }
-        if (!userDTO.getLogin().equals(existedLogin)) {
-            System.out.println("User is registered");
-            return "redirect:/app/login";
-        } else {
+        Optional<Person> checkLogin = personService.getByLogin(requestPerson.getLogin());
+        if (checkLogin.isPresent()) {
             request.setAttribute("badRegister", "User with this login is already existing");
-            return "/app/registration";
+            return "/registration.jsp";
         }
+        personService.create(PersonDTO.getPersonFromDto(requestPerson));
+        return "redirect:/login";
     }
 
-    private boolean isValidUser(UserDTO user) {
+    private boolean isValidUser(PersonDTO user) {
         return user.getLogin().matches(RegExpConstants.LOGIN_VALID_REGEXP) &&
                 user.getEmail().matches(RegExpConstants.EMAIL_VALID_REGEXP);
     }

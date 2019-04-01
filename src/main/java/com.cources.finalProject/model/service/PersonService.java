@@ -12,6 +12,7 @@ public interface PersonService {
     List<Person> getAllByRole(Role role);
     Optional<Person> getByLogin(String login);
     Optional<Person> getByEmail(String email);
+    Optional<Person> getByLoginOrEmail(String loginOrEmail);
     void create(Person entity);
     void update(Person entity);
     void delete(long id);

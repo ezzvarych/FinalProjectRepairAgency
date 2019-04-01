@@ -62,6 +62,7 @@ public class JDBCPersonDAOTest {
     }
 
     @Test
+    @Ignore
     public void getAllTest() {
         List<Person> lst = personDAO.getAll();
         assertEquals(lst.size(), 11);
