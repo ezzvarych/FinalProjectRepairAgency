@@ -12,6 +12,11 @@ import java.util.HashSet;
  */
 public class SessionListener implements HttpSessionListener {
 
+    @Override
+    public void sessionCreated(HttpSessionEvent se) {
+        se.getSession().setAttribute("role", Role.UNKNOWN);
+    }
+
     /**
      * Do something when session is destroying
      * @param se

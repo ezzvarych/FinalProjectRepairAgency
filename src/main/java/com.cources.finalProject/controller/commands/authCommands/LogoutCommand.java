@@ -1,5 +1,6 @@
 package com.cources.finalProject.controller.commands.authCommands;
 
+import com.cources.finalProject.controller.annotations.RequestMapping;
 import com.cources.finalProject.controller.commands.Command;
 
 import javax.servlet.ServletException;
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Handle logout
  */
+@RequestMapping
 public class LogoutCommand implements Command {
     /**
      * Finish session

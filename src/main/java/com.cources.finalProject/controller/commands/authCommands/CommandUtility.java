@@ -22,12 +22,6 @@ class CommandUtility {
         session.setAttribute("role", role);
     }
 
-    static AbstractMap.Entry<String, Role> getSessionUser(HttpServletRequest request, String login) {
-        HttpSession session = request.getSession();
-        return new AbstractMap.SimpleEntry<String, Role>((String)session.getAttribute("login"),
-                (Role)session.getAttribute("role"));
-    }
-
     static boolean isUserLogged(HttpServletRequest request, String login) {
         HashSet<String> loggedUsers = (HashSet<String>) request.getServletContext().getAttribute("loggedUsers");
         return loggedUsers.contains(login);

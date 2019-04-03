@@ -1,5 +1,6 @@
 package com.cources.finalProject.model.dao.impl;
 
+import com.cources.finalProject.exceptions.DBRequestException;
 import com.cources.finalProject.model.dao.DAOFactory;
 import com.cources.finalProject.model.dao.specificdao.FeedbackDAO;
 import com.cources.finalProject.model.dao.specificdao.OrderDAO;
@@ -17,7 +18,8 @@ public class JDBCDaoFactory extends DAOFactory {
         try {
             return dataSource.getConnection();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException("Something went wrong with our DB, sorry((", e);
         }
     }
 
@@ -28,7 +30,7 @@ public class JDBCDaoFactory extends DAOFactory {
 
     @Override
     public OrderRequestDAO createOrderRequestDao() {
-        return null;
+        return new JDBCOrderRequestDAO(dataSource);
     }
 
     @Override

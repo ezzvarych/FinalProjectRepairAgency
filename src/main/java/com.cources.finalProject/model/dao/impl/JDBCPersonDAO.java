@@ -1,5 +1,7 @@
 package com.cources.finalProject.model.dao.impl;
 
+import com.cources.finalProject.exceptions.DBRequestException;
+import com.cources.finalProject.exceptions.NotUniqueRegisterException;
 import com.cources.finalProject.model.dao.JDBCTemplate;
 import com.cources.finalProject.model.dao.mapper.PersonMapper;
 import com.cources.finalProject.model.dao.specificdao.PersonDAO;
@@ -79,7 +81,8 @@ public class JDBCPersonDAO implements PersonDAO {
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection, GET_BY_EMAIL_QUERY, email)) {
             return Optional.ofNullable(getPersonFromStatement(statement));
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 
@@ -90,7 +93,8 @@ public class JDBCPersonDAO implements PersonDAO {
                      loginOrEmail, loginOrEmail)) {
             return Optional.ofNullable(getPersonFromStatement(statement));
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 
@@ -102,7 +106,7 @@ public class JDBCPersonDAO implements PersonDAO {
 
             statement.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new NotUniqueRegisterException(entity, "This login or email is already busy, choose another one");
         }
     }
 
@@ -119,7 +123,8 @@ public class JDBCPersonDAO implements PersonDAO {
                 personList.add(person);
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
         return personList;
     }
@@ -130,7 +135,8 @@ public class JDBCPersonDAO implements PersonDAO {
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection, GET_BY_ID_QUERY, id)) {
             return Optional.ofNullable(getPersonFromStatement(statement));
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 
@@ -142,7 +148,8 @@ public class JDBCPersonDAO implements PersonDAO {
                      entity.getRole().ordinal(), entity.getPersonId())) {
             statement.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 
@@ -152,7 +159,8 @@ public class JDBCPersonDAO implements PersonDAO {
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection, DELETE_QUERY, id)) {
             statement.executeUpdate();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 

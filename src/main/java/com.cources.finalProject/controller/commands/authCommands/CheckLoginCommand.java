@@ -1,5 +1,6 @@
 package com.cources.finalProject.controller.commands.authCommands;
 
+import com.cources.finalProject.controller.annotations.RequestMapping;
 import com.cources.finalProject.controller.commands.Command;
 import com.cources.finalProject.controller.mapper.PersonMapper;
 import com.cources.finalProject.model.dto.PersonDTO;
@@ -16,6 +17,7 @@ import java.util.Optional;
 /**
  * Handle user logging process
  */
+@RequestMapping
 public class CheckLoginCommand implements Command {
 
     private PersonService personService;
@@ -38,10 +40,11 @@ public class CheckLoginCommand implements Command {
     public String execute(HttpServletRequest request) throws ServletException {
         //GET USER FROM FROM
         PersonDTO dto = PersonMapper.loginExtractFromRequest(request);
-        //IF USER IS ALREADY LOGGED, RETURN APPROPRIATE PAGE
+        //IF USER IS ALREADY LOGGED, RETURN MAIN PAGE
         if (CommandUtility.isUserLogged(request, dto.getLogin())) {
-            Role userRole = CommandUtility.getSessionUser(request, dto.getLogin()).getValue();
-            return rolesMapping.get(userRole);
+            //Role userRole = CommandUtility.getSessionUser(request, dto.getLogin()).getValue();
+            //return rolesMapping.get(userRole);
+            return rolesMapping.get(Role.UNKNOWN);
         }
         //COMPARING DATA FROM REQUEST WITH DATA FROM DB
         Optional<Person> optionalPerson = personService.getByLoginOrEmail(dto.getLogin());

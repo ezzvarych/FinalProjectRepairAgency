@@ -20,10 +20,10 @@
 <body>
     <h1>Registration form</h1>
     <form action="/app/check-register" method="post">
-        <c:out value="${badRegister}" />
-        <p><fmt:message key="registration.inputLogin" /> <input type="text" name="login" required="required" /></p>
-        <p><fmt:message key="registration.email" /> <input type="text" name="email" required="required"></p>
-        <p><fmt:message key="registration.inputPassword" /> <input type="password" name="password" required="required" /></p>
+        <c:out value="${exception.message}" />
+        <p><fmt:message key="registration.inputLogin" /> <input type="text" name="login" value="${exception.person.login}" required="required" /></p>
+        <p><fmt:message key="registration.email" /> <input type="text" name="email" value="${exception.person.email}" required="required"></p>
+        <p><fmt:message key="registration.inputPassword" /> <input type="password" name="password" value="${exception.person.password}" required="required" /></p>
         <p><fmt:message key="registration.role" />
             <select name="role" required="required">
                 <option value="Customer"><fmt:message key="role.customer" /></option>
