@@ -14,6 +14,7 @@
     <title>Customer main page</title>
 </head>
 <body>
-    <p><a href="/app/new-order">Make new order</a></p>
+    <p><a href="/app/customer/new-order">Make new order</a></p>
+    <p><a href="/app/customer/get-orders">Get all orders</a></p>
 </body>
 </html>

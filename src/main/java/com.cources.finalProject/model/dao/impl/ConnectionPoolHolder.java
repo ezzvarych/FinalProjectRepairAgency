@@ -1,10 +1,17 @@
 package com.cources.finalProject.model.dao.impl;
 
 import org.apache.commons.dbcp2.BasicDataSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
 
+/**
+ * Singleton, create connection pool if absent
+ */
 public class ConnectionPoolHolder {
+    private static Logger logger = LoggerFactory.getLogger(ConnectionPoolHolder.class);
+
     private static volatile DataSource dataSource;
 
     private static final String DRIVER_CLASS = "com.mysql.jdbc.Driver";
@@ -16,6 +23,7 @@ public class ConnectionPoolHolder {
         if (dataSource == null) {
             synchronized (ConnectionPoolHolder.class) {
                 if (dataSource == null) {
+                    logger.info("Created instance of ConnectionPool");
                     BasicDataSource basicDataSource = new BasicDataSource();
                     basicDataSource.setDriverClassName(DRIVER_CLASS);
                     basicDataSource.setUrl(CONNECTION_STRING);

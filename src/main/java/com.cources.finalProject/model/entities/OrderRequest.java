@@ -1,7 +1,13 @@
 package com.cources.finalProject.model.entities;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.sql.Date;
 
+/**
+ * Contain user requests about order which should
+ * be consider by manager
+ */
 //TODO Add builders to entities
 public class OrderRequest {
     private Long requestId;
@@ -9,7 +15,7 @@ public class OrderRequest {
     private String requestDescr;
     private Person manager;
     private Date requestDate;
-    private boolean isDenied;
+    private Boolean isDenied;
     private String denyReason;
 
     public static class OrderRequestBuilder {
@@ -46,7 +52,7 @@ public class OrderRequest {
             return this;
         }
 
-        public OrderRequestBuilder setDenied(boolean denied) {
+        public OrderRequestBuilder setDenied(Boolean denied) {
             isDenied = denied;
             return this;
         }
@@ -69,6 +75,19 @@ public class OrderRequest {
         this.requestDate = builder.requestDate;
         this.isDenied = builder.isDenied;
         this.denyReason = builder.denyReason;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderRequest{" +
+                "requestId=" + requestId +
+                ", user=" + user +
+                ", requestDescr='" + requestDescr + '\'' +
+                ", manager=" + manager +
+                ", requestDate=" + requestDate +
+                ", isDenied=" + isDenied +
+                ", denyReason='" + denyReason + '\'' +
+                '}';
     }
 
     public void setRequestId(long requestId) { this.requestId = requestId; }
@@ -107,11 +126,11 @@ public class OrderRequest {
         this.requestDate = requestDate;
     }
 
-    public boolean isDenied() {
+    public Boolean isDenied() {
         return isDenied;
     }
 
-    public void setDenied(boolean denied) {
+    public void setDenied(Boolean denied) {
         isDenied = denied;
     }
 

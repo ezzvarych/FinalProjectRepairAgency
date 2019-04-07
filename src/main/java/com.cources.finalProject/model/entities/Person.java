@@ -14,20 +14,12 @@ public class Person {
     private String password;
     private Role role;
 
-    private List<OrderRequest> userRequests = new ArrayList<>();
-    private List<OrderRequest> managerRequests = new ArrayList<>();
-    private List<Order> masterOrders = new ArrayList<>();
-
     public static class PersonBuilder {
         private Long personId;
         private String login;
         private String email;
         private String password;
         private Role role;
-        private List<OrderRequest> userRequests;
-        private List<OrderRequest> managerRequests;
-        private List<Order> masterOrders;
-
 
         public PersonBuilder setPersonId(Long personId) {
             this.personId = personId;
@@ -50,18 +42,7 @@ public class Person {
             this.role = role;
             return this;
         }
-        public PersonBuilder setUserRequests(List<OrderRequest> requests) {
-            this.userRequests = requests;
-            return this;
-        }
-        public PersonBuilder setManagetRequests(List<OrderRequest> requests) {
-            this.managerRequests = requests;
-            return this;
-        }
-        public PersonBuilder setMasterOrders(List<Order> orders) {
-            this.masterOrders = masterOrders;
-            return this;
-        }
+
         public Person build() {
             return new Person(this);
         }
@@ -120,30 +101,6 @@ public class Person {
 
     public void setRole(Role role) {
         this.role = role;
-    }
-
-    public List<OrderRequest> getUserRequests() {
-        return userRequests;
-    }
-
-    public void setUserRequests(List<OrderRequest> userRequests) {
-        this.userRequests = userRequests;
-    }
-
-    public List<OrderRequest> getManagerRequests() {
-        return managerRequests;
-    }
-
-    public void setManagerRequests(List<OrderRequest> managerRequests) {
-        this.managerRequests = managerRequests;
-    }
-
-    public List<Order> getMasterOrders() {
-        return masterOrders;
-    }
-
-    public void setMasterOrders(List<Order> masterOrders) {
-        this.masterOrders = masterOrders;
     }
 
     @Override

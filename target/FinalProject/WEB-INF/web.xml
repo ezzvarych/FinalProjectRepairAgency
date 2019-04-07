@@ -31,7 +31,7 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>com.cources.finalProject.listeners.SessionListener</listener-class>
+        <listener-class>com.cources.finalProject.controller.listeners.SessionListener</listener-class>
     </listener>
 
 

@@ -14,6 +14,7 @@ public class LocaleFilter implements Filter {
             httpServletRequest.getSession().setAttribute("lang",
                     request.getParameter("locale"));
         }
+
         chain.doFilter(request, response);
     }
 }

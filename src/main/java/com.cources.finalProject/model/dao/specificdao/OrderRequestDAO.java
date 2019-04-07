@@ -11,4 +11,5 @@ public interface OrderRequestDAO extends GenericDAO<OrderRequest> {
     List<OrderRequest> getAllByUser(Person user);
     List<OrderRequest> getAllAccepted();
     List<OrderRequest> getAllDenied();
+    List<OrderRequest> getAllUnhandled();
 }

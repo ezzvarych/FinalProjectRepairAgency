@@ -1,5 +1,6 @@
 package com.cources.finalProject.controller.filters;
 
+import com.cources.finalProject.model.entities.Person;
 import com.cources.finalProject.model.entities.Role;
 
 import javax.servlet.*;
@@ -26,12 +27,18 @@ public class AuthFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-
         String reqPath = req.getRequestURI().replace("/app/", "");
-        Role sessionRole = (Role)req.getSession().getAttribute("role");
+
+        Person sessionUser = (Person) req.getSession().getAttribute("sessionUser");
+        Role sessionRole;
+        if (sessionUser != null) {
+            sessionRole = sessionUser.getRole();
+        } else {
+            sessionRole = Role.UNKNOWN;
+        }
+
         Optional<Map.Entry<String, Role>> op = authPaths.entrySet().stream()
                 .filter(pair -> reqPath.startsWith(pair.getKey())).findAny();
-        //System.out.println(op.);
 
         if (op.isPresent() && sessionRole.compareTo(op.get().getValue()) < 0) {
             resp.setStatus(HttpServletResponse.SC_FORBIDDEN);

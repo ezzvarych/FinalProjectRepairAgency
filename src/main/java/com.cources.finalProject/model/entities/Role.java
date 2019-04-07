@@ -3,6 +3,9 @@ package com.cources.finalProject.model.entities;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Contains all possible user roles
+ */
 public enum Role {
     UNKNOWN(0), CUSTOMER(1), MASTER(2), MANAGER(3), ADMIN(4);
 

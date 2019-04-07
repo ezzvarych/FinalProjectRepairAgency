@@ -1,5 +1,8 @@
 package com.cources.finalProject.exceptions;
 
+/**
+ * Each SQLException will be catched to throw this RuntimeException
+ */
 public class DBRequestException extends RuntimeException {
 
     public DBRequestException() {

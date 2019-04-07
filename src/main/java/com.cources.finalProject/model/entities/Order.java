@@ -1,5 +1,8 @@
 package com.cources.finalProject.model.entities;
 
+/**
+ * Entity for user orders
+ */
 //TODO Add builders to entities
 public class Order {
     private OrderRequest orderRequest;

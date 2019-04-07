@@ -6,9 +6,13 @@ import com.cources.finalProject.model.dao.specificdao.OrderDAO;
 import com.cources.finalProject.model.dao.specificdao.OrderRequestDAO;
 import com.cources.finalProject.model.dao.specificdao.PersonDAO;
 
+/**
+ * Singleton, implements abstract factory for DAO
+ */
 public abstract class DAOFactory {
     private static DAOFactory daoFactory;
 
+    // All DAOs, now only JDBC realization
     public abstract PersonDAO createPersonDao();
     public abstract OrderRequestDAO createOrderRequestDao();
     public abstract OrderDAO createOrderDao();

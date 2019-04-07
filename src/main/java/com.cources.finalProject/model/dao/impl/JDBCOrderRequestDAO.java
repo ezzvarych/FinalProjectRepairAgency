@@ -20,10 +20,9 @@ public class JDBCOrderRequestDAO implements OrderRequestDAO {
 
     private static final String GET_ALL_REQUESTS_QUERY = "select * from request";
     private static final String GET_REQUEST_BY_ID_QUERY = "select * from request where request_id=?";
-    private static final String GET_ALL_BY_USER_QUERY = "select * from request r inner join" +
-            " person p on r.user_id=?";
+    private static final String GET_ALL_BY_USER_QUERY = "select * from request where user_id=?";
     private static final String CREATE_QUERY = "insert into request (user_id, description, request_time)" +
-            " values (?, ?, ?)";
+            " values (?, ?, NOW())";
 
 
 
@@ -38,30 +37,23 @@ public class JDBCOrderRequestDAO implements OrderRequestDAO {
         return null;
     }
 
-    //TODO Fix method, was written when I didn't know what to do
     @Override
     public List<OrderRequest> getAllByUser(Person user) {
-        Map<Long, Person> personMap = new HashMap<>();
-        Map<Long, OrderRequest> orderRequestMap = new HashMap<>();
-
+        List<OrderRequest> requests = new ArrayList<>();
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection,
                      GET_ALL_BY_USER_QUERY, user.getPersonId())) {
 
             try (ResultSet rs = statement.executeQuery()) {
                 OrderRequestMapper orderRequestMapper = new OrderRequestMapper();
-                PersonMapper personMapper = new PersonMapper();
                 while (rs.next()) {
-                    Person person = personMapper.extractFromResultSet(rs);
                     OrderRequest orderRequest = orderRequestMapper.extractFromResultSet(rs);
-                    personMapper.makeUnique(personMap, person);
-                    orderRequestMapper.makeUnique(orderRequestMap, orderRequest);
-                    person.getUserRequests().add(orderRequest);
+                    requests.add(orderRequest);
                 }
-                return new ArrayList<>(orderRequestMap.values());
+                return requests;
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            throw new DBRequestException(e);
         }
     }
 
@@ -79,7 +71,7 @@ public class JDBCOrderRequestDAO implements OrderRequestDAO {
     public void create(OrderRequest entity) {
         try (Connection connection = dataSource.getConnection();
              PreparedStatement statement = JDBCTemplate.prepareQuery(connection, CREATE_QUERY,
-                     entity.getUser().getPersonId(), entity.getRequestDescr(), entity.getRequestDate())) {
+                     entity.getUser().getPersonId(), entity.getRequestDescr())) {
 
             statement.executeUpdate();
         } catch (SQLException e) {

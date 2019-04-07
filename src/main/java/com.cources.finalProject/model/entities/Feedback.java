@@ -1,5 +1,8 @@
 package com.cources.finalProject.model.entities;
 
+/**
+ * Entity for user feedbacks
+ */
 public class Feedback {
     private Order order;
     private String text;

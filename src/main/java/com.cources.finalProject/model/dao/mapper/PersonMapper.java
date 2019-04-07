@@ -9,7 +9,6 @@ import java.util.Map;
 
 public class PersonMapper implements ObjectMapper<Person> {
 
-
     @Override
     public Person extractFromResultSet(ResultSet rs) throws SQLException {
         Person person = new Person.PersonBuilder()
